@@ -8,7 +8,7 @@ import { registrationPage } from '../pages/registration';
 import { navbar } from './navbar';
 import { sidebar } from './sidebar';
 import MainUser from '../Classes/MainUser.js';
-import { searchPage } from '../pages/search/';
+import { searchPage } from '../pages/search';
 import { userSettingPage } from '../pages/userSetting';
 
 export default new (class AppTemplate {
