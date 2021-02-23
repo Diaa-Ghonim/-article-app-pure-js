@@ -1,0 +1,157 @@
+
+
+$break-small : 320px;
+$break-medium : 650px;
+$break-large : 1111px;
+$color-blue-dark : rgb(16, 36, 61) ;
+$color-blue-light : rgb(60, 82, 121) ;
+$color-tomato : rgb(218, 90, 81) ;
+$color-white : rgb(255, 255, 255) ;
+$color-gray : rgb(144, 144, 144);
+$color-gray-light : rgb(233, 235, 238);
+$color-gray-lighter : rgb(221, 223, 226);
+$color-offwhite : rgb(240, 235, 235) ;
+$color-offwhite-dark : rgb(206, 202, 202) ;
+$color-white-dark : rgb(182, 180, 180);
+$border-blue : rgb(26, 43, 69) ;
+$color-black : rgb(0, 0, 0) ;
+$color-black-light : rgb(23, 20, 20) ;
+$color-black-dotone-opacity : rgba(0, 0, 0, .15);
+$color-black-dotthree-opacity : rgba(0, 0, 0, .3);
+
+
+@import "./js/pages/registration/registration.scss" ;
+@import "./js/appTemplate/navbar/navbar.scss" ;
+@import "./js/appTemplate/mainContainerHolder.scss" ;
+
+
+
+
+
+
+input[type=submit] {
+    padding: .4em 1.5em;
+    outline: none;
+    border: none;
+    background-color: $color-blue-light ;
+    color:white ;
+    cursor: pointer;
+}
+
+input[type=email],input[type=password],input[type=text] {
+    padding: 10px 0;
+    outline: none;
+    background-color: inherit;
+    color : $color-offwhite ;
+    border: none;
+    border-bottom : 1px solid $color-white-dark ;
+    width: 100%;
+}
+input::placeholder{
+    color: $color-white-dark ;
+    font-size: 12px;
+}
+input:focus::placeholder{
+    color: transparent ;
+}
+input[type=checkbox] {
+    outline : none ;
+    border : none ;
+    background-color: $color-tomato;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus 
+{
+  border: none ;
+  color : $color-offwhite ;
+  border-bottom: 1px solid $color-offwhite;
+  -webkit-text-fill-color: $color-offwhite;
+  background-color: $color-blue-dark;
+  box-shadow: 0 0 0px 1000px $color-blue-dark inset;
+  -webkit-box-shadow: 0 0 0px 1000px $color-blue-dark inset;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: $color-offwhite;
+  font-size: inherit;
+}
+
+input[type=search]:-webkit-autofill,
+input[type=search]:-webkit-autofill:hover, 
+input[type=search]:-webkit-autofill:focus{
+    color : $color-black;
+    border: 1px solid $color-offwhite;
+    -webkit-text-fill-color: $color-black;
+    background-color: $color-white;
+    box-shadow: 0 0 0px 1000px $color-white inset;
+    -webkit-box-shadow: 0 0 0px 1000px $color-white inset;
+    transition: background-color 5000s ease-in-out 0s;
+    // caret-color: $color-offwhite;
+    font-size: inherit;
+}
+input[type=search]{
+    padding: 5px 5px;
+    border: 1px solid $color-offwhite-dark;
+    outline: none;
+    text-indent: 10px;
+    border-radius: 25px;
+    line-height: 1.325;
+    width: 100%;
+    &::placeholder{
+        font-size: 15px;
+    }
+}
+label{
+    display: block;
+    padding: 10px 0 0 ;
+    color : $color-offwhite ;
+    font-size : 13px
+}
+svg{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+html , body ,.root{
+    min-height: 100% !important;
+    height: 100%;
+}
+
+body{
+    overflow-y : scroll ;
+    overscroll-behavior-y: none;
+    // background-color: #e9ebee;
+}
+
+
+.root{
+    margin: auto;
+    height: auto;
+    min-width: $break-small;
+    background-color: $color-gray-light ;
+    .app[data-with-navbar=true]{
+        .nav-holder{
+            display: block;
+        }
+    }
+    .app[data-with-navbar=false]{
+        .nav-holder{
+            display: none;
+        }
+    }
+}
+

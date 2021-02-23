@@ -1,0 +1,14 @@
+
+.search-holder{
+    .search-people-wrapper{
+        .user-card{
+            display: flex;
+            flex-direction: row;
+
+            :first-child{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

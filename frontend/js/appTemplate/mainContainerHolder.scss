@@ -1,0 +1,61 @@
+
+@import "./sidebar/sidebar.scss" ;
+@import "../modules/ArticleManager/article.scss" ;
+@import "../modules/UserManger/user.scss" ;
+@import "../pages/userSetting/userSetting.scss" ;
+@import "../modules/ArticleManager/editArticle.scss" ;
+
+.main-container-holder[data-with-sidebar="true"]{
+    .sidebar-holder{
+        display: block;
+    }
+    @media screen and (max-width : $break-medium) {
+        .sidebar-holder{
+            display: none;
+        }
+
+    }
+}
+.main-container-holder[data-with-sidebar="false"]{
+    .sidebar-holder{
+        display: none;
+    }
+}
+.main-container-holder{
+    display: flex;
+    flex-direction: row;
+    max-width: $break-large;
+    min-width: $break-small;
+    // padding-top: 10px;
+    margin: auto;
+    color: rgb(20, 23, 26);
+    .sidebar-holder{
+        // flex-basis : 33% ;
+        flex: 1;
+        overflow: hidden ;
+        word-break: break-all;
+        display: flex;
+        min-width: 250px;
+        @media screen and (max-width : $break-medium) {
+            display: none;
+    
+        }
+    }
+    .content-holder{
+        // flex-basis: 66%;
+        flex: 2;
+        overflow: hidden;
+        word-break: break-all;
+        height: 100%;
+        padding : 0px 10px;
+        width: 100%;
+        @media screen and (max-width : $break-medium) {
+            // border: 1px solid $color-tomato;
+        }
+    }
+    @media screen and (max-width : $break-medium) {
+        flex-direction: column;
+        // border: 1px solid $color-tomato;
+    }
+
+}

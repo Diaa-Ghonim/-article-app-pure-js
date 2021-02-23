@@ -1,0 +1,100 @@
+
+1 => handle remaining article requstes as save and share and others
+
+2 => if there is time handle some user requsets 
+
+3 => search on mongoDB ObjectID
+
+4 => check code and refactor any thing need refactoring as injection in controller to repo
+
+5 => handle the differnce between client and server for data as data sended to article create and data recieved
+
+6 => reading about conventions on api
+
+/* 
+
+  * these points to work backend
+
+  1 => the difference between sql and nosql databases
+
+  2 => microservices
+
+  3 => databases layers 
+
+  4 => dealing with more databases
+
+  5 => cashing 
+
+  6 => algrothims
+
+  7 => datastructures
+
+  8 => problemsolving
+
+*/
+
+7 =>  reading about some idioms on cs
+
+8 => iti
+
+9 => AI & ML
+
+10 => microservices
+
+11 => compiled and interpreted languages
+
+12 => aggreagation idiom
+
+13 =>  when i use interfaces and when i use type in ts
+
+14 => the difference between npx and npm 
+
+15 => typeorm with typescript and js
+
+16 => validation in every layer
+
+17 => the difference between getConnection and getRepository getManager
+
+18 => you can run server with ts without complie it to js by ts-node => read about it
+
+19 => using ts-node
+
+20 => how can send message to telephone and send email to user
+
+21 => how to requset other server 
+
+22 => working with ecommerce
+
+23 => how dealing with netflex
+
+24 => test code
+
+25 => notice ===> create react app in d/projects/ts/my-app
+
+26 => csrf protection against xss malicous code
+
+27 => web security
+
+28 => firebase
+
+29 => google cloud 
+
+30 => bootstrap 
+
+31 => sign in by facebook
+
+32 => npm npx / yarn start
+
+33 => Gatsby, React, Custom Hooks, GraphQL, Serverless Functions, Scoped CSS, and more!!
+
+34 => the differnce between imprative and declarative
+
+35 => config mongoDB or mongooze url
+
+36 => proccess.env == build
+
+38 => amazon cloud and google cloud service
+
+39 => write docs to routes 
+
+40 => GraphQL

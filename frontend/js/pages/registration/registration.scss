@@ -1,0 +1,115 @@
+
+
+
+.container-registration{
+    background-color: $color-white ;
+    padding:  50px;
+    height : 100% ;
+    .registration {
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        min-height : 555px ;
+        overflow: hidden;
+        box-shadow: 0 0 60px $color-gray ;
+        .logo{
+            flex-grow : 1;
+            background-color: $color-tomato;
+            padding: 20px;
+            color: $color-offwhite;
+            display: flex;
+            flex-direction: column;
+            div {
+                margin: auto;
+                font-weight: bold;
+                svg{
+                    height : 300px;
+                    width : 200px;
+                    fill: $color-offwhite;
+    
+                }
+            }
+    
+            @media screen and (max-width : $break-medium){
+                padding : 5px ;
+    
+                div  {
+                    svg {
+                        height : 60px;
+                        width : 250px;
+                    }
+                }
+            }
+        }
+        .show-error-message {
+            display: none;
+            background-color: $color-tomato;
+            color: $color-offwhite;
+            padding: 0 40px;
+        }
+        .register{
+            flex-grow : 1 ;
+            background-color: $color-blue-dark ;
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            max-width: 400px;
+            .register-change-view{
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 20px ;
+                div {
+                    display: flex;
+                    width: auto;
+                    border-radius: 25px;
+                    overflow: hidden;
+                    input{
+                        font-size: 13px;
+                    }
+                    .select{
+                        background-color : $color-tomato ;
+                    }
+                }    
+            }
+            .register-view {
+                padding: 20px 30px;
+                div {
+                    .signin-form, .signup-form{
+                        display: flex;
+                        flex-direction : column ;
+                        div{
+                            padding: 10px;
+                            span{
+                                color :$color-offwhite ;
+                            }
+                            input[type=submit] {
+                                border-radius: 25px;
+                                background-color : $color-tomato ;
+                                padding : 6px 40px ;
+                            }
+                        }
+                    }
+                } 
+            }
+            
+    
+             
+        }
+    
+        @media screen and (max-width : $break-medium) {
+            flex-direction: column;
+            .register{
+                max-width: 100%;
+            }
+        }
+    }
+    
+    
+    @media screen and (max-width : $break-medium){
+        padding:15px;
+        background-color: inherit;
+        .registration{
+            height: 100%;
+        }
+    }
+}

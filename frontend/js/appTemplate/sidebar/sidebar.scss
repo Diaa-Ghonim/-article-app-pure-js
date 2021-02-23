@@ -1,0 +1,37 @@
+
+
+
+
+
+    .sidebar-content{
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        div{
+            margin-bottom : 10px ;
+            background-color : $color-white ;
+            padding : 10px ;
+            border-radius: 5px;
+            // border-bottom: 1px solid #00000057;
+            border: 1px solid $color-gray-light ;
+
+            .top-reading-content{
+                // border: none;
+                div{
+                    border: none;
+                    border-radius: 0;
+                    border-bottom: 1px solid $color-gray-light ;
+                }
+            }
+            
+           
+        }
+        @media screen and (max-width : $break-medium) {
+                
+            
+        
+        
+        }
+    }
+
+    

@@ -1,0 +1,28 @@
+
+<% console.log(data) %>
+
+<div class="user-info-container">
+    <div class="user-image">
+        <div>
+            <div style="background-image: url(<%= data.getUserImage() %>);">
+                <!-- <img src="<%= data.getUserImage() %>"> -->
+            </div>
+        </div>
+    </div>
+    <div class="user-name">
+        <div>
+            <h1><%= data.getUsername() %></h1>
+        </div>
+        <div>
+            <button id="edit-btn">edit</button>
+        </div>
+    </div>
+    <div class="user-info">
+        <p>* born in <%= data.getUserBirth() %></p>
+        <p>* rate : <%= data.getUserRate() %></p>
+        <p>* <%= data.getUserBio() %></p>
+        
+
+    </div>
+</div>
+

@@ -1,0 +1,25 @@
+
+.add-article-wrapper{
+    width: 100%;
+    padding: 10px;
+    .add-article-container{
+
+        .add-article-title{
+            padding: 15px 10px;
+            margin-bottom: 20px;
+            background-color: $color-white;
+            h1{
+                text-align: center;
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            input[type=submit] {
+                margin-top: 15px;
+                align-self: flex-end;
+            }
+        }
+    }
+}
